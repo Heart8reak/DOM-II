@@ -16,9 +16,10 @@ companyLogo.addEventListener("mouseover", function (event) {
 
 
     setTimeout(function () {
-        event.target.style.color = "red"
-        // event.target.style.transform = "auto";
-    }, 500);
+        // event.target.style.color = "red"
+        // event.target.style.transform = "skew(180deg, 180deg)";
+        event.target.style.transform = "";
+    }, 2000);
 }, false);
 
 
@@ -55,7 +56,7 @@ function zoom(event) {
 };
 
 let scale = 1;
-const el = document.getElementsByClassName('.scale');
+const el = document.querySelector('aside');
 // el.addEventListener('wheel', zoom);
 el.onwheel = zoom;
 
@@ -211,3 +212,40 @@ const card = document.querySelector('aside');
 card.addEventListener('dblclick', function (e) {
     card.classList.toggle('large');
 })
+
+
+
+// ########################
+// ##################
+// mouseleave
+// #################
+// ########################
+
+
+let test = document.querySelector('nav');
+
+test.addEventListener('mouseenter', function (event) {
+    event.target.style.color = 'red';
+
+    setTimeout(function () {
+        event.target.style.color = '';
+    }, 500);
+}, false);
+
+
+test.addEventListener('mouseover', function (event) {
+    event.target.style.color = 'red';
+
+    setTimeout(function () {
+        event.target.style.color = '';
+    }, 500);
+}, false);
+
+
+// ########################
+// ##################
+// scroll
+// #################
+// ########################
+
+
