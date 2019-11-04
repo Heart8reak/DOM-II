@@ -272,6 +272,57 @@ img {
     width: 100%;
   }
 }
+.home .keylogger {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 400px;
+  margin: 0 auto;
+}
+.home .keylogger .keylogger input {
+  margin: 0 auto;
+  font-size: 4rem;
+}
+.home .play-area {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  height: 350px;
+}
+.home .play-area .scale {
+  width: 180px;
+  height: 120px;
+  background: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .play-area .scale p {
+  color: purple;
+  text-align: center;
+}
+.home .play-area .dragMe {
+  width: 180px;
+  height: 120px;
+  background: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .play-area .dragMe p {
+  color: red;
+  text-align: center;
+}
+.home .play-area .dropzone {
+  width: 180px;
+  height: 120px;
+  background: yellowgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;

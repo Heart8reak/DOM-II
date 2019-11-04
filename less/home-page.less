@@ -51,6 +51,69 @@
     }
   }
 
+  .keylogger {
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 400px;
+    margin: 0 auto;
+
+    .keylogger input {
+      margin: 0 auto;
+      font-size: 4rem;
+    }
+  }
+
+  .play-area {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 350px;
+
+    .scale {
+      width: 180px;
+      height: 120px;
+      background: aqua;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      p {
+        color: purple;
+        text-align: center;
+      }
+    }
+
+    .dragMe {
+      width: 180px;
+      height: 120px;
+      background: yellow;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        color: red;
+        text-align: center;
+      }
+    }
+
+    .dropzone {
+      width: 180px;
+      height: 120px;
+      background: yellowgreen;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px 0;
+
+    }
+  }
+
+
+
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
