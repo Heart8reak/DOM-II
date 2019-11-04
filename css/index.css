@@ -329,6 +329,13 @@ img {
   justify-content: space-around;
   align-items: center;
 }
+.home .form {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
