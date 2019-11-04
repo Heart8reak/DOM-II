@@ -323,6 +323,12 @@ img {
   justify-content: center;
   margin: 5px 0;
 }
+.home .control {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;

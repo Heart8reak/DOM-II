@@ -103,4 +103,35 @@ document.addEventListener("drop", function (event) {
         dragged.parentNode.removeChild(dragged);
         event.target.appendChild(dragged);
     }
-}, false);  
+}, false);
+
+
+// ########################
+// ##################
+// Load
+// #################
+// ########################
+
+const logger = document.querySelector('.event-log-contents');
+const reload = document.querySelector('#reload');
+
+
+reload.addEventListener('click', () => {
+    logger.textContent = '';
+    window.setTimeout(() => {
+        window.location.reload(true);
+    }, 200);
+});
+
+window.addEventListener('load', (event) => {
+    logger.textContent - logger.textContent + 'load\n';
+});
+
+document.addEventListener('readystatechange', (event) => {
+    logger.textContent = logger.textContent + `readystate: ${document.readyState}\n`;
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    logger.textContent = logger.textContent + `DOMContentLoaded\n;`
+});
+
