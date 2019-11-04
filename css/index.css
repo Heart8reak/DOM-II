@@ -302,6 +302,14 @@ img {
   color: purple;
   text-align: center;
 }
+.home .play-area .aside {
+  transform: scale(0.9);
+  transform-origin: 0;
+  transition: transform 0.6s;
+}
+.home .play-area .large {
+  transform: scale(1.3);
+}
 .home .play-area .dragMe {
   width: 180px;
   height: 120px;
@@ -331,9 +339,9 @@ img {
 }
 .home .form {
   display: flex;
-  flex-flow: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  justify-content: space-around;
   height: 75px;
 }
 .home .resize {
