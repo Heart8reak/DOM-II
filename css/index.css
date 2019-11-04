@@ -336,6 +336,13 @@ img {
   align-items: center;
   height: 75px;
 }
+.home .resize {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;

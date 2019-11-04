@@ -17,7 +17,7 @@ companyLogo.addEventListener("mouseover", function (event) {
 
     setTimeout(function () {
         event.target.style.color = "red"
-        event.target.style.transform = "auto";
+        // event.target.style.transform = "auto";
     }, 500);
 }, false);
 
@@ -153,3 +153,20 @@ password.addEventListener('blur', (event) => {
     event.target.style.background = '';
 });
 
+
+// ########################
+// ##################
+// Resize
+// #################
+// ########################
+
+
+const heightOutput = document.querySelector('#height');
+const widthOutput = document.querySelector('#width');
+
+function reportWindowSize() {
+    heightOutput.textContent = window.innerHeight;
+    widthOutput.textContent = window.innerWidth;
+}
+
+window.onresize = reportWindowSize;
