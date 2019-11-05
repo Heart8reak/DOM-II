@@ -279,9 +279,9 @@ img {
   width: 400px;
   margin: 0 auto;
 }
-.home .keylogger .keylogger input {
+.home .keylogger input {
   margin: 0 auto;
-  font-size: 4rem;
+  font-size: 25px;
 }
 .home .play-area {
   display: flex;
