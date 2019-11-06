@@ -51,6 +51,94 @@
     }
   }
 
+  .keylogger {
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 400px;
+    margin: 0 auto;
+
+    input {
+      margin: 0 auto;
+      font-size: 25px;
+    }
+  }
+
+  .play-area {
+    .center();
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    height: 350px;
+
+    .scale {
+      width: 180px;
+      height: 120px;
+      background: aqua;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      p {
+        color: purple;
+        text-align: center;
+      }
+    }
+
+    .aside {
+      transform: scale(.9);
+      transform-origin: 0.0;
+      transition: transform .6s;
+    }
+
+    .large {
+      transform: scale(2.5);
+    }
+
+    .dragMe {
+      width: 180px;
+      height: 120px;
+      background: yellow;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        color: red;
+        text-align: center;
+      }
+    }
+
+    .dropzone {
+      width: 180px;
+      height: 120px;
+      background: yellowgreen;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px 0;
+
+    }
+  }
+
+  .control {
+    .center();
+    justify-content: space-around;
+  }
+
+  .form {
+    .center();
+    justify-content: space-around;
+    height: 75px;
+  }
+
+  .resize {
+    .center();
+    justify-content: space-around;
+    height: 50px;
+  }
+
+
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;

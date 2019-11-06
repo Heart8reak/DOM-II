@@ -167,6 +167,7 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  border: 1px solid red;
 }
 @media (max-width: 500px) {
   .container {
@@ -270,6 +271,86 @@ img {
   .home .content-section .img-content img {
     width: 100%;
   }
+}
+.home .keylogger {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 400px;
+  margin: 0 auto;
+}
+.home .keylogger input {
+  margin: 0 auto;
+  font-size: 25px;
+}
+.home .play-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  height: 350px;
+}
+.home .play-area .scale {
+  width: 180px;
+  height: 120px;
+  background: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .play-area .scale p {
+  color: purple;
+  text-align: center;
+}
+.home .play-area .aside {
+  transform: scale(0.9);
+  transform-origin: 0;
+  transition: transform 0.6s;
+}
+.home .play-area .large {
+  transform: scale(2.5);
+}
+.home .play-area .dragMe {
+  width: 180px;
+  height: 120px;
+  background: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .play-area .dragMe p {
+  color: red;
+  text-align: center;
+}
+.home .play-area .dropzone {
+  width: 180px;
+  height: 120px;
+  background: yellowgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+}
+.home .control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.home .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  height: 75px;
+}
+.home .resize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
 }
 .home .inverse-content {
   padding-bottom: 30px;
